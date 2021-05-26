@@ -15,7 +15,10 @@ def login():
 
 
 @app.route("/autentica", methods=['POST'])
-def
+def autentica():
+    user = request.form["usuario"]
+    senha = request.form["senha"]
+    print(user, senha)
 
 
 if __name__ == "__main__":
